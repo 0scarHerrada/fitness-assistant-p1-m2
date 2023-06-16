@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const handleRunTraining = (e) => {
+    console.log(e.target.innerHTML)
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +22,8 @@ function App() {
         >
           Learn React
         </a>
+        <br/>
+        <button onClick={handleRunTraining}>Run training</button>
       </header>
     </div>
   );
